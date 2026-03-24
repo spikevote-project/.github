@@ -1,4 +1,4 @@
-![spikevote_motivation](https://github.com/user-attachments/assets/bdcd1922-aa89-41e6-a6e3-44095ea2634d)\# SpikeVote-project
+# SpikeVote-project (beta)
 
 本プロジェクトは、Neuropixels記録データに対するスパイクソーティング後のキュレーション作業を補助し、将来的にはその半自動化を実現するためのパイプライン構築を目的とするものです。
 具体的には、複数の研究室からキュレーション済みデータの提供を受け、それらを統合した上で機械学習モデル（UnitRefine）を学習させ、unit分類を支援するためのカスタム共有モデルを構築することを検討しています。
@@ -30,105 +30,44 @@
 
 できる限り多様な実験者からの貢献を歓迎します。
 
-1. Kilosort4後、Phyによるmanual実行済みファイルに対して、SpikeVoteを実行してください(学習データの提供)。
-2. パラメータファイルのCSVファイルとメタファイルのjsonファイルをgithubディレクトリ直下のdataディレクトリにpushしてください。
+1. Kilosort4後、Phyによるmanualキュレーション実行済みファイルに対して、SpikeVoteを実行してください(学習データの提供)。
+2. パラメータファイルのCSVファイルとメタファイルのjsonファイルを、GitHubディレクトリ直下のdataディレクトリにpushしてください。
 
 
-\### 学習データの提供
+\### 学習データの提供について
 
+Phy でキュレーション済みの Neuropixels データ（Kilosort4 出力ではない）があれば、以下のexport_unitrefine.data.ipynbスクリプトを1回実行して出力された CSVとJSONを送るだけです。生データ（.bin 等）を送る必要はありません。
+export_unitrefine.data.ipynb実行までの、Kilosort4とspikeinterfaceの実行環境構築のためのDockerは、SpikeVoteリポジトリから利用できます。
+実行前に、スクリプト冒頭の１セルの内容をカスタムに書き換えてから実行してください。
 
-Phy でキュレーション済みの Neuropixels データ（Kilosort4 出力）があれば、
+詳細は export_unitrefine_data.ipynb を参照してください。
 
-以下のexport_unitrefine.data.ipynbスクリプトを1回実行して出力された CSV を送るだけです。生データ（.bin 等）を送る必要はありません。
-export_unitrefine.data.ipynb実行までの、Kilosort4とspikeinterfaceの実行環境構築のためのdockerは、SpikeVoteリポジトリから利用できます。
-実行前に、スクリプト冒頭の１セルの内容を、カスタムに書き換えてから実行してください。
+\### リターン
 
-CSV にはクオリティメトリクスとキュレーションラベルのみが含まれます。
+現時点の方針として、学習データを提供いただいた方に対して、複数のラボから提供いただいたデータを用いて学習済みのUnitRefine用モデルを使えるようにしたいと考えています。
+個人ベースで進めているため時間がかかる予定ですので、その点ご理解いただけますと幸いです。手伝っていただける人が増えるほど早めにリターンできますので、モデル開発・改善に協力いただける有志の方は、なみままで DM ください。
 
-\### 想定しているリターン
-
-
-現時点では、学習データを提供いただいた方に対して、Uniterefine用の学習済みのモデルを使えるようにしたいと考えています。
-個人ベースで進めていくので時間がかかってしまう予定です。
-複数のラボから提供データを用いてUniterefineで学習し、学習済みモデルを作成する計画ですので、その過程を協力してディベロップしてくれる人がいたら助かります。
-作成できたものはHagging Face等で共有する予定です。いろいろ手伝っていただける人が増えれば早めにリターンできます。
-
-![Upload<svg width="100%" viewBox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
-
+![spikevote_motivation](https://github.com/user-attachments/assets/bdcd1922-aa89-41e6-a6e3-44095ea2634d)\
 
 \### 問題報告
-
-
 
 バグ・質問・提案は GitHub の Issue を開いてください。
 
 
-
-\### コードの変更
-
-
-
-1\. このリポジトリを Fork する
-
-2\. ブランチを作成する（`git checkout -b feature/your-feature`）
-
-3\. 変更をコミットする
-
-4\. `main` ブランチに向けて Pull Request を作成する
-
-
-
-ノートブックは直接編集しないでください。
-
-変更が必要な場合はコピーを作成し、そちらを編集してください。
-
-
-
-\---
-
-
-
-\## 動作環境
-
-
-
-\- Python 3.11 以上
-
-\- SpikeInterface >= 0.102.0
-
-\- Kilosort4（スパイクソーティング用）
-
-\- Phy（手動キュレーション用）
-
-
-
-```bash
-
-pip install "spikeinterface\[full]>=0.102.0"
-
-```
-
-
-
-\---
-
-
-
-> 注意：生成 AI を利用して進めています。
-
+注意：コーディングに生成 AI (Claude.ai) を利用して進めていますので、抵抗ある方は使用をお控えください。
 
 
 \## 管理者
 
-
-
-なみま（阪大・西本研）  
+なみま（namimatomoyuki@gmail.com）  
 
 質問・連絡は Issue またはなみままで直接お問い合わせください。
 
 
 
 
+\## 開発履歴
+2026.3　開発開始(TN)。配布プロトコルのプロトタイプ作成
 
 
 
