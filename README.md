@@ -1,4 +1,3 @@
-<img width="353" height="1462" alt="image" src="https://github.com/user-attachments/assets/9936c034-5a98-4364-b0d9-4f5bbaa73fe7" /># .github
 \# SpikeVote
 
 
