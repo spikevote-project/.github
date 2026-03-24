@@ -5,7 +5,7 @@
 学習によって得られたモデルを、学習データを提供した各研究室に還元することで、それぞれのキュレーション作業の効率化や判断の一貫性向上に役立てることを目指しています。
 
 ![spikevote_pipeline_overview_v2](https://github.com/user-attachments/assets/64b5cbc1-de6b-43fa-a342-e5089e2d4852)
-図１. プロジェクト構想の概要図
+図１. プロジェクト構想
 
 
 ---
