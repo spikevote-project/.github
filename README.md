@@ -50,7 +50,7 @@ export_unitrefine.data.ipynb実行までの、Kilosort4とspikeinterfaceの実�
 現時点の方針として、学習データを提供いただいた方に対して、複数のラボから提供いただいたデータを用いて学習済みのUnitRefine用モデルを使えるようにしたいと考えています。
 個人ベースで進めているため時間がかかる予定ですので、その点ご理解いただけますと幸いです。手伝っていただける人が増えるほど早めにリターンできますので、モデル開発・改善に協力いただける有志の方は、なみままで DM ください。
 
-![spikevote_motivation](https://github.com/user-attachments/assets/bdcd1922-aa89-41e6-a6e3-44095ea2634d)\
+![spikevote_motivation_v2](https://github.com/user-attachments/assets/bf114702-2bb1-4d5e-9be5-4f8da8d36ae3)
 
 ### 問題報告
 
