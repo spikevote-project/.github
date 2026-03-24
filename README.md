@@ -3,6 +3,8 @@
 Neuropixels 記録データのスパイクソーティング後のキュレーションを補助（理想的には半自動化）するためのパイプラインを構築するプロジェクト構想です。
 具体的な目標として、複数ラボのキュレーションデータを統合して機械学習（UnitRefine ）させ、 unit分類のカスタムモデルを学習データドナーに還元することを検討しています。
 
+
+\---
 ![Uploading spikevote_p<svg width="100%" viewBox="0 0 680 540" xmlns="http://www.w3.org/2000/svg">
 <defs>
   <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
@@ -92,9 +94,6 @@ Neuropixels 記録データのスパイクソーティング後のキュレー�
 <text x="510" y="313" text-anchor="middle" style="fill:rgb(61, 61, 58);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:auto">モデル改善</text>
 
 </svg>ipeline_overview_v2.svg…]()
-
-\---
-
 
 \## 背景と目的
 
