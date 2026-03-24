@@ -18,7 +18,7 @@ SpikeVote の実行に必要な Kilosort4 + SpikeInterface 環境を Docker で�
 ## Step 1: リポジトリをクローンする
 
 ```bash
-git clone https://github.com/your-username/SpikeVote.git
+git clone https://github.com/spikevote-project/SpikeVote.git
 cd SpikeVote
 ```
 
@@ -69,7 +69,7 @@ docker run -it --rm --gpus all \
 コンテナ起動後、ターミナルに表示される URL をブラウザで開きます。
 
 ```
-http://127.0.0.1:8888/lab?token=xxxxxxxx
+http://127.0.0.1:8888/tree
 ```
 
 `/workspace/notebooks/` に `export_unitrefine_data.ipynb` があります。
@@ -79,22 +79,67 @@ http://127.0.0.1:8888/lab?token=xxxxxxxx
 ## Step 5: ノートブックを実行する
 
 1. `export_unitrefine_data.ipynb` を開く
-2. 冒頭の設定セルを自ラボの環境に書き換える
+2. 解析対象のデータはDドライブにおく
+3. 冒頭の設定セルを自ラボの環境に書き換える
 
 ```python
 LAB_ID         = "your_lab_name"
-BASE_FOLDER    = "/workspace/data"
 SESSION_FOLDER = "subject_id/session_id"
 ```
 
-3. 上から順番にセルを実行する
-4. 完了後、以下の2ファイルが出力される
+4. 上から順番にセルを実行する
+5. 完了後、以下の2ファイルが出力される
 
 ```
 /workspace/data/.../unitrefine_export/
     your_lab_20250101_1200_metrics.csv   ← 送付するファイル
     your_lab_20250101_1200_meta.json     ← 送付するファイル
 ```
+
+---
+
+## コンテナの終了
+
+Jupyter Notebook を使い終わったら、以下のいずれかの方法で終了してください。
+
+**方法①: Jupyter のメニューから終了（推奨）**
+
+Jupyter Lab の `File` → `Shut Down` を選択します。
+
+**方法②: ターミナルから終了**
+
+コンテナを起動したターミナルで `Ctrl + C` を2回押します。
+
+**方法③: 別ターミナルから終了**
+
+```bash
+docker stop $(docker ps -q --filter ancestor=spikevote)
+```
+
+---
+
+> `/workspace/data` にマウントしたフォルダ内のファイルはコンテナ終了後もローカルに残ります。
+> それ以外（コンテナ内）で作成したファイルは終了時に消えます。
+
+**コンテナ・イメージの削除**
+
+不要になった場合は以下で完全に削除できます。
+
+```bash
+# 停止中のコンテナを削除
+docker rm $(docker ps -aq --filter ancestor=spikevote)
+
+# イメージを削除（再度使う場合は docker pull が必要）
+docker rmi spikevote
+```
+
+まとめて一括削除したい場合:
+
+```bash
+docker system prune -a
+```
+
+> ⚠️ `docker system prune -a` は SpikeVote 以外の全コンテナ・イメージも削除されます。他のDockerプロジェクトがある場合は個別に削除してください。
 
 ---
 
