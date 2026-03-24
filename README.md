@@ -5,8 +5,10 @@
 さらに、学習によって得られたモデルは、学習データを提供した各研究室に還元し、それぞれのキュレーション作業の効率化や判断の一貫性向上に役立てることを目指します。
 
 ![spikevote_pipeline_overview_v2](https://github.com/user-attachments/assets/64b5cbc1-de6b-43fa-a342-e5089e2d4852)
-図１. 概念図
+図１. プロジェクト構想の概要図
 
+
+---
 
 ## 背景と目的
 
@@ -35,7 +37,7 @@
 2. パラメータファイルのCSVファイルとメタファイルのjsonファイルを、GitHubディレクトリ直下のdataディレクトリにpushしてください。
 
 
-\### 学習データの提供について
+### 学習データの提供について
 
 Phy でキュレーション済みの Neuropixels データ（Kilosort4 出力ではない）があれば、以下のexport_unitrefine.data.ipynbスクリプトを1回実行して出力された CSVとJSONを送るだけです。生データ（.bin 等）を送る必要はありません。
 export_unitrefine.data.ipynb実行までの、Kilosort4とspikeinterfaceの実行環境構築のためのDockerは、SpikeVoteリポジトリから利用できます。
@@ -43,14 +45,14 @@ export_unitrefine.data.ipynb実行までの、Kilosort4とspikeinterfaceの実�
 
 詳細は export_unitrefine_data.ipynb を参照してください。
 
-\### リターン
+### リターン
 
 現時点の方針として、学習データを提供いただいた方に対して、複数のラボから提供いただいたデータを用いて学習済みのUnitRefine用モデルを使えるようにしたいと考えています。
 個人ベースで進めているため時間がかかる予定ですので、その点ご理解いただけますと幸いです。手伝っていただける人が増えるほど早めにリターンできますので、モデル開発・改善に協力いただける有志の方は、なみままで DM ください。
 
 ![spikevote_motivation](https://github.com/user-attachments/assets/bdcd1922-aa89-41e6-a6e3-44095ea2634d)\
 
-\### 問題報告
+### 問題報告
 
 バグ・質問・提案は GitHub の Issue を開いてください。
 
@@ -58,16 +60,14 @@ export_unitrefine.data.ipynb実行までの、Kilosort4とspikeinterfaceの実�
 注意：コーディングに生成 AI (Claude.ai) を利用して進めていますので、抵抗ある方は使用をお控えください。
 
 
-\## 管理者
+## 管理者
 
 なみま（namimatomoyuki@gmail.com）  
 
 質問・連絡は Issue またはなみままで直接お問い合わせください。
 
 
-
-
-\## 開発履歴
+## 開発履歴
 2026.3　開発開始(TN)。配布プロトコルのプロトタイプ作成
 
 
