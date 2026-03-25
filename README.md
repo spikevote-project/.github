@@ -46,6 +46,8 @@ margeもしくはsplitは学習から除外
 SUA,MUA,noiseの分類を学習(UnitRefine)。
 
 
+![spikevote_id_mapping](https://github.com/user-attachments/assets/018c94ea-3f62-4731-9ae9-ed014c4f985e)
+
 ### 学習データの提供について
 
 Phy でキュレーション済みの Neuropixels データ（Kilosort4 出力ではない）があれば、以下のexport_unitrefine.data.ipynbスクリプトを1回実行して出力された CSVとJSONを送るだけです。生データ（.bin 等）を送る必要はありません。
