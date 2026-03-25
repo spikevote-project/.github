@@ -42,8 +42,9 @@
 ・関数実行時にメタファイルにcurator情報を手入力することで、モデル学習時にデータフィルタリングすることでファインチューニングできるように整備。
 
 【戦略】
-margeもしくはsplitは学習から除外
+
 SUA,MUA,noiseの分類を学習(UnitRefine)。
+mergeもしくはsplitになるようなunitとは、上記の３カテゴリ外に分類
 
 
 ![spikevote_id_mapping](https://github.com/user-attachments/assets/018c94ea-3f62-4731-9ae9-ed014c4f985e)
