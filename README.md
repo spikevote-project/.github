@@ -177,10 +177,10 @@ For bugs, questions, or suggestions, please open an Issue on GitHub.
 ## Note on the Use of Generative AI / 生成AI利用に関する注意
 
 **EN**  
-Please note that generative AI tools, including Claude.ai, are used during coding and development. If you are uncomfortable with this, please refrain from using the project.
+Please note that generative AI tools, including Claude.ai, are used during coding and development. 
 
 **JP**  
-注意：コーディングに生成AI（Claude.ai）を利用して進めていますので、抵抗ある方は使用をお控えください。
+注意：コーディングに生成AI（Claude.ai）を利用して進めています。
 
 ---
 
