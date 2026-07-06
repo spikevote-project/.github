@@ -118,14 +118,14 @@ If you have Neuropixels data that have already been curated in Phy, you only nee
 You do not need to send raw data such as `.bin` files.
 
 ```text
-export_unitrefine_data.ipynb
+export_spikedata_curatedunits2v.ipynb
 ```
 
-The Docker environment for running Kilosort4 and SpikeInterface before executing `export_unitrefine_data.ipynb` is available from the SpikeVote repository.
+The Docker environment for running Kilosort4 and SpikeInterface before executing `export_spikedata_curatedunits2v.ipynb` is available from the SpikeVote repository.
 
 Before running the notebook, please edit only the first configuration cell to match your own dataset and environment.
 
-For details, please refer to `export_unitrefine_data.ipynb`.
+For details, please refer to `export_spikedata_curatedunits2v.ipynb`.
 
 **JP**  
 Phyでキュレーション済みのNeuropixelsデータがあれば、以下のノートブックを1回実行して出力されたCSVとJSONを送るだけです。
@@ -133,14 +133,14 @@ Phyでキュレーション済みのNeuropixelsデータがあれば、以下の
 生データ（`.bin` 等）を送る必要はありません。
 
 ```text
-export_unitrefine_data.ipynb
+export_spikedata_curatedunits2v.ipynb
 ```
 
-`export_unitrefine_data.ipynb` 実行までの、Kilosort4とSpikeInterfaceの実行環境構築のためのDockerは、SpikeVoteリポジトリから利用できます。
+`export_spikedata_curatedunits2v.ipynb` 実行までの、Kilosort4とSpikeInterfaceの実行環境構築のためのDockerは、SpikeVoteリポジトリから利用できます。
 
 実行前に、スクリプト冒頭の1セルの内容をカスタムに書き換えてから実行してください。
 
-詳細は `export_unitrefine_data.ipynb` を参照してください。
+詳細は `export_spikedata_curatedunits2v.ipynb` を参照してください。
 
 ---
 
